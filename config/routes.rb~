@@ -1,22 +1,15 @@
 Enyumba::Application.routes.draw do
-  
-root to: 'static_pages#home'
+  get "static_pages/home"
 
-  match '/renting',    to: 'static_pages#renting'
-  match '/landlord',    to: 'static_pages#landlord'
+  get "static_pages/renting"
 
-  match '/about',   to: 'static_pages#about'
+  get "static_pages/landlord"
 
-  match '/contact', to: 'static_pages#contact' 
-match '/client_sign',   to: 'static_pages#client_sign' 
+  get "static_pages/about"
 
+  get "static_pages/contact"
 
-
-
-
-
-
-
+  get "static_pages/client_sign"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

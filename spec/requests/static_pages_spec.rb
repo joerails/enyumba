@@ -1,106 +1,93 @@
 require 'spec_helper'
 
-describe "StaticPages" do
+describe "Static pages" do
+ let(:base_title) { "enyumba.com" }
 
-  describe "home " do
-
+  describe "Home" do
 
     it "should have the h1 'home'" do
-      visit '/static_pages/home'
-      page.should have_selector('h1', :text => 'home')
+      visit root_path
+      page.should have_selector('h1', text: 'home')
     end
 
-    it "should have the title 'home'" do
-      visit '/static_pages/home'
+    it "should have the base title" do
+      visit root_path
       page.should have_selector('title',
-                    :text => "enyumba")
+                        text: "#{base_title}")
+    end
   end
-end
 
-  describe "renting " do
-
-    
+  describe "renting" do
 
     it "should have the h1 'renting'" do
-      visit '/static_pages/renting'
-      page.should have_selector('h1', :text => 'renting')
+      visit renting_path
+      page.should have_selector('h1', text: 'renting')
     end
 
-    it "should have the title 'renting'" do
-      visit '/static_pages/renting'
+    it "should have the title 'enyumba.com'" do
+      visit renting_path
       page.should have_selector('title',
-                    :text => "enyumba")
+                        text: "#{base_title}")
+    end
   end
-end
 
-
-
-
-  describe "landlord " do
-
-   
+  describe "landlord" do
 
     it "should have the h1 'landlord'" do
-      visit '/static_pages/landlord'
-      page.should have_selector('h1', :text => 'landlord')
+      visit landlord_path
+      page.should have_selector('h1', text: 'landlord')
     end
 
-    it "should have the title 'landlord'" do
-      visit '/static_pages/landlord'
+    it "should have the title 'enyumba.com'" do
+      visit landlord_path
       page.should have_selector('title',
-                    :text => "enyumba")
+                    text: "#{base_title}")
+    end
   end
-end
 
-  
+  describe "about " do
 
-    describe "about " do
-
-    it "should have the h1 'about '" do
-      visit '/static_pages/about'
-      page.should have_selector('h1', :text => 'about')
+    it "should have the h1 'about'" do
+      visit about_path
+      page.should have_selector('h1', text: 'about')
     end
 
     it "should have the title 'about'" do
-      visit '/static_pages/about'
+      visit about_path
       page.should have_selector('title',
-                    :text => "enyumba")
+                    text: "#{base_title}")
+    end
   end
-end
 
-
-
-  
-
-   describe "contact" do
+ describe "contact" do
 
     it "should have the h1 'contact'" do
-      visit '/static_pages/contact'
-      page.should have_selector('h1', :text => 'contact')
+      visit contact_path
+      page.should have_selector('h1', text: 'contact')
     end
 
-    it "should have the title 'About Us'" do
-      visit '/static_pages/contact'
+    it "should have the title 'contact'" do
+      visit contact_path
       page.should have_selector('title',
-                    :text => "enyumba")
-
+                    text: "#{base_title}")
+    end
   end
-end
 
 
+describe "client_sign" do
 
-  describe "client_sign " do
-
-   it "should have the h1 'client_sign'" do
-      visit '/static_pages/client_sign'
-      page.should have_selector('h1', :text => 'client_sign')
+    it "should have the h1 'client_sign'" do
+      visit client_sign_path
+      page.should have_selector('h1', text: 'client_sign')
     end
 
-    it "should have the title 'client_sign'" do
-      visit '/static_pages/client_sign'
+    it "should have the title 'client_sign '" do
+      visit client_sign_path
       page.should have_selector('title',
-                    :text => "enyumba")
+                    text: "#{base_title}")
+    end
   end
-end
 
 end
+
+

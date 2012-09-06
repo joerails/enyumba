@@ -1,11 +1,7 @@
 
 <% provide(:title, 'client_sign') %>
-<!DOCTYPE html>
-<html>
-<head>
+
 <title>enyumba <%= yield(:title) %></title>
-</head>
-<body>
+
 <h1>client_sign</h1>
-</body>
-</html>
+
