@@ -17,7 +17,6 @@
     <button class="btn">3</button>
     </div>
 
-
 <%= yield %>
 </div>
 </body>
