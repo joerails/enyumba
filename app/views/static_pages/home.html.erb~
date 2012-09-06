@@ -1,8 +1,12 @@
 
 <% provide(:title, 'home') %>
+<!DOCTYPE html>
 
+<html>
+<head>
 <title>enyumba  <%= yield(:title) %></title>
-
-
+</head>
+<body>
 <h1>home</h1>
-
+</body>
+</html>

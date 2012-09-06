@@ -1,9 +1,11 @@
 
 <% provide(:title, 'contact') %>
-
-
+<!DOCTYPE html>
+<html>
+<head>
 <title>enyumba  <%= yield(:title) %></title>
-
-
+</head>
+<body>
 <h1>contact</h1>
-
+</body>
+</html>
