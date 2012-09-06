@@ -1,4 +1,16 @@
 Enyumba::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/renting"
+
+  get "static_pages/landlord"
+
+  get "static_pages/about"
+
+  get "static_pages/contact"
+
+  get "static_pages/client_sign"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
