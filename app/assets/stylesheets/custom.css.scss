@@ -70,5 +70,51 @@ p {
   color: #fff;
   text-decoration: none;
 }
+.front-welcome {
+    background: url("http://www.illustrationsof.com/royalty-free-house-clipart-illustration-214946.jpg") no-repeat scroll left top #000000;
+    border: 0 none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 125px rgba(255, 255, 255, 0.35);
+    display: block;
+    height: 400px;
+    left: 0;
+    /*position: absolute;*/
+    top: 0;
+    width: 400px;
+}
+.front-welcome-text {
+    top: 800;
+    /*color: #EEEEEE;*/
+    font-size: 20px;
+    font-weight: 300;
+    left: 200;
+    line-height: 22px;
+    padding: 20px;
+    position: absolute;
+    text-align: left;
+    text-shadow: 0 1px 2px #000000;
+    width: 470px;
+    
+}
+.front-welcome-text h1 {
+    /*color: #FFFFFF;*/
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.signup-btn {
+position:fixed;
+top: 465px;
+left: 425px;
+}
+.home-cour {
 
+ position:absolute;
+ top:350px;
+ left:80px;
+}
+.front-signin {
 
+ position:fixed;
+ top:30px;
+ left:700px;
+}
