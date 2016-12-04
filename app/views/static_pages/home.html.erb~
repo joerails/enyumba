@@ -1,12 +1,42 @@
+       <div class="span8">
+      <h3>Houses for rent</h3>
+         </div>
+  </div>  
+<div class = "container-fluid">
+<div class = "home-cour">
+    <div id="myCarousel" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+    <div class="active item">  <%= link_to image_tag("evo.jpg", alt: "HTC EVO"), '#' %> </div>
+    <div class="item"> <%= link_to image_tag("iphone.png", alt: "iPhone"), '#' %> </div>
+    <div class="item"> <%= link_to image_tag("laptop.jpg", alt: "Laptops under 50KSh"), '#' %> </div>
+    <div class="item"> <%= link_to image_tag("laptop2.jpg", alt: "Laptops under 50KSh"), '#' %> </div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    
+</div>
+</div>  
+</div>  
+<div class="front-card">
+	<div class="front-welcome">
+  		<div class="front-welcome-text">
+ 			<h1> Welcome to Enyumba </h1>
+			
+ 		</div>
+	</div>
 
-<% provide(:title, 'home') %>
-<!DOCTYPE html>
+    </div>
 
-<html>
-<head>
-<title>enyumba  <%= yield(:title) %></title>
-</head>
-<body>
-<h1>home</h1>
-</body>
-</html>
+<div class = "signup-btn">
+    <%= link_to "Sign up now!", '#', 
+                                class: "btn btn-large btn-primary" %>
+</div>
+    <script>
+$('.carousel.slide').carousel({
+    interval: 2500
+});
+    </script>
+
+
